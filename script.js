@@ -4,7 +4,7 @@
 
       new Promise((resolve) => {
         setTimeout(() => {
-          output.innerHTML = `Result: ${one}`;
+          output.innerHTML += `Result: ${one}<br>`;
           resolve(one);
         }, 2000);
       })
@@ -12,7 +12,7 @@
         return new Promise((resolve) => {
           setTimeout(() => {
             const result = val * 2;
-            output.innerHTML = `Result: ${result}`;
+            output.innerHTML += `Result: ${result}<br>`;
             resolve(result);
           }, 2000);
         });
@@ -21,7 +21,7 @@
         return new Promise((resolve) => {
           setTimeout(() => {
             const result = val - 3;
-            output.innerHTML = `Result: ${result}`;
+            output.innerHTML += `Result: ${result}<br>`;
             resolve(result);
           }, 3000);
         });
@@ -30,7 +30,7 @@
         return new Promise((resolve) => {
           setTimeout(() => {
             const result = val - 2;
-            output.innerHTML = `Result: ${result}`;
+            output.innerHTML += `Result: ${result}<br>`;
             resolve(result);
           }, 1000);
         });
@@ -39,7 +39,7 @@
         return new Promise((resolve) => {
           setTimeout(() => {
             const result = val / 2;
-            output.innerHTML = `Result: ${result}`;
+            output.innerHTML += `Result: ${result}<br>`;
             resolve(result);
           }, 1000);
         });
@@ -48,7 +48,7 @@
         return new Promise((resolve) => {
           setTimeout(() => {
             const result = val + 10;
-            output.innerHTML = `Final Result: ${result}`;
+            output.innerHTML += `Final Result: ${result}`;
             resolve(result);
           }, 1000);
         });
